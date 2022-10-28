@@ -1,0 +1,25 @@
+{{#each this}}
+  <div class="output-container">
+    <div class="output-container__item output-container__item-img">
+            <img src="{{flags.png}}" alt="флаг {{name.common}}" width="320"/>
+          </div>
+          <div class="output-container__item output-container__item-info">
+              <h2 class="card__name">{{name.common}}</h2>
+            <ul>
+              <li><strong>Столица:</strong> {{capital}}</li>
+              <li><strong>Население:</strong> {{population}}</li>
+              <li class="languages__item"><strong>Языки:</strong>
+              <ul>
+                {{#each languages}}
+                <li>{{this}}</li>
+                {{/each}}
+              </ul> 
+                  
+              </li>
+            </ul>
+          </div>
+          <div class="output-container__item output-container__item-img">
+            <img src="{{coatOfArms.png}}" alt="герб {{name.common}}" width="320"/>
+          </div>
+  </div>
+{{/each}}
