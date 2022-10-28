@@ -1,6 +1,6 @@
 import { alert, error } from '@pnotify/core';
 
-export default notification = type => {
+const notification = type => {
   type === 'alert'
     ? alert({
         text: 'Уточните запрос. Слишком много сповпадений!',
@@ -11,3 +11,5 @@ export default notification = type => {
         delay: 1500,
       });
 };
+
+export default notification;
